@@ -9,13 +9,17 @@ body {
   font-family: monospace;
   height: 100%;
   width: 100%;
-  background: #2c2c2c;
+  background: #262626;
   color: #dadada;
 }
-h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-}
+/* h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+} */
 img {
   vertical-align: top;
+}
+ul {
+  list-style: none;
 }
