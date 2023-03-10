@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+html,
+body {
+  font-family: monospace;
+  height: 100%;
+  width: 100%;
+  background: #2c2c2c;
+  color: #dadada;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+img {
+  vertical-align: top;
+}
