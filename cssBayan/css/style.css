@@ -13,10 +13,10 @@
 }
 .item__label {
   display: block;
-  padding-bottom: 0.1rem;
+  padding: 0.1rem 0;
 }
 .label__container {
-  padding: 1rem 2rem;
+  padding: 1rem;
   background: #ffebc6;
   border-radius: 7px;
 
@@ -25,20 +25,22 @@
   flex-wrap: wrap;
 }
 .label__title {
-  flex: 0 1 80%;
+  flex: 0 1 90%;
 }
 .label__icon {
   flex: 1 0 10%;
-  text-align: right;
+  text-align: center;
+  transform: scale(1.5, 1);
+
+  transition: 0.3s;
 }
-.icon__content {
-  transform: rotate(180deg);
-  display: inline-block;
+.label__icon:hover {
+  transform: scale(1.5, -1);
 }
 .label__image {
   border-radius: 7px;
   overflow: hidden;
-  /* display: none; */
+  display: none;
 }
 
 .label__image>img {
