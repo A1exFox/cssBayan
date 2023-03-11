@@ -1,12 +1,21 @@
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+  /* cursor: pointer; */
 }
 .list {
   margin: 2rem auto;
   width: 95%;
   font-size: 2rem;
   line-height: 1.4;
+  /* cursor: pointer; */
+}
+/* .list>li {
+  cursor: pointer;
+} */
+.list:hover .label__icon {
+  opacity: 1;
+  transition: 0.5s;
 }
 .radioinput {
   display: none;
@@ -22,11 +31,13 @@
 .item__label {
   display: block;
   padding: 0.1rem 0;
+  cursor: pointer;
 }
 .label__container {
   padding: 1rem;
-  background: #ffebc6;
-  border-radius: 7px;
+  background: #ffe4b3;
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.2rem 0 #00000030;
 
   display: flex;
   justify-content: center;
@@ -36,15 +47,16 @@
   flex: 0 1 90%;
 }
 .label__icon {
-  flex: 1 0 10%;
+  flex: 1 0 9%;
   text-align: center;
   transform: scale(1.5, 1);
-
+  opacity: 0;
   transition: 0.5s;
 }
 .label__image {
-  border-radius: 7px;
+  border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 0 0 0.5rem 0 #000000ff;
 }
 .label__image>img {
   max-width: 100%;
