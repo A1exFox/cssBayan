@@ -5,7 +5,7 @@
 .list {
   margin: 2rem auto;
   width: 95%;
-  font-size: 2rem;
+  font-size: 0.8rem;
   transition: 0.3s;
 }
 .radioinput {
@@ -70,5 +70,20 @@
   }
   .label__icon {
     opacity: 0;
+  }
+}
+@media (min-width:320px) {
+  .list {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width:820px) {
+  .list {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width:1920px) {
+  .list {
+    font-size: 2.5rem;
   }
 }
