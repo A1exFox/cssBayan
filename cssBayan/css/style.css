@@ -4,11 +4,39 @@
 }
 .list {
   margin: 2rem auto;
-  padding: 1rem;
   width: 95%;
   background: #ffebc6;
   font-size: 2rem;
+  line-height: 1.4;
 }
 .list__item>input {
   display: none;
+}
+.item__label {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.label__title {
+  flex: 0 1 80%;
+}
+.label__icon {
+  flex: 1 0 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.label__icon>img {
+  width: 1.5em;
+  height: 1.5em;
+}
+.label__image {
+  border-radius: 7px;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.label__image>img {
+  max-width: 100%;
+  height: 100%;
 }
