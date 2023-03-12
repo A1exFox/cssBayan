@@ -4,13 +4,16 @@
   margin: 0;
   border: 0;
 }
+html {
+  overflow-y: scroll;
+}
 html,
 body {
   font-family: monospace;
   line-height: 1.4;
   height: 100%;
   width: 100%;
-  color: #ff7300;
+  /* color: #ff7300; */
   background: #ffdfa5;
 }
 img {
