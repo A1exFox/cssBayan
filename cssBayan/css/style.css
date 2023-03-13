@@ -23,6 +23,10 @@
   cursor: pointer;
   color: #ff7300;
 }
+.item__label:active .label__image {
+  transform: scale(0.95, 0.95);
+  opacity: 0.8;
+}
 .item__label:active .label__title {
   color: #ff7300;
 }
