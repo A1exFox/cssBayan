@@ -8,9 +8,6 @@
   width: 95%;
   font-size: 0.8rem;
 }
-.radioinput {
-  display: none;
-}
 .radioinput:checked+.item__label {
   color: #4b4b4b;
 }
