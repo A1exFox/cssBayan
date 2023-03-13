@@ -11,7 +11,7 @@
 .radioinput {
   display: none;
 }
-.radioinput:checked+.item__label .label__title {
+.radioinput:checked+.item__label {
   color: #4b4b4b;
 }
 .radioinput:checked+.item__label .label__icon>img {
@@ -24,6 +24,13 @@
   display: block;
   padding: 0.1rem 0;
   cursor: pointer;
+  color: #ff7300;
+}
+.item__label:active .label__title {
+  color: #ff7300;
+}
+.item__label:active .label__icon {
+  filter: grayscale(0);
 }
 .label__container {
   padding: 2rem 1rem 1rem;
@@ -37,13 +44,14 @@
 .label__title {
   flex: 0 1 85%;
   margin-bottom: 1rem;
-  color: #ff7300;
   transition: 0.5s;
 }
 .label__icon {
   color: #4b4b4b;
   flex: 1 0 15%;
   text-align: right;
+  filter: grayscale(1);
+  transition: 0.5s;
 }
 .label__icon>img {
   height: 2em;
@@ -64,7 +72,7 @@
   .label__icon>img {
     opacity: 0;
   }
-  .list:hover .label__title {
+  .list:hover .item__label {
     color: #4b4b4b;
   }
   .list:hover .label__icon>img {
